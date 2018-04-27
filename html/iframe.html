@@ -39,7 +39,9 @@
 			let otherid = other_player_id+'-'+this_player_id;
 			
 			// instantiate connection
-			let peer = new Peer(myid, { host: 'serverrp.herokuapp.com', port: 9000, path: '/voiceChat'});
+			//let peer = new Peer(myid, { host: 'serverrp.herokuapp.com', port: 9000, path: '/voiceChat'});
+			//var PeerServer = require('peer').PeerServer;
+			var peer = PeerServer({port: 9000, path: '/myapp'});
 			
 			
 			//
